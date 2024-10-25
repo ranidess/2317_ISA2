@@ -15,7 +15,7 @@ pipeline {
     stage('Build') {
       steps {
         dir('2317_ISA2'){
-          bat 'docker build -t mca2317/2317_ISA2 -f Dockerfile .'
+          bat 'docker build -t mca2317/2317_isa2 -f Dockerfile .'
         }
       }
     }
@@ -26,7 +26,7 @@ pipeline {
     }
     stage('Running in Daemon mode') {
       steps {
-        bat 'docker run -d --name 2317 mca2317/2317_ISA2'
+        bat 'docker run -d --name 2317 mca2317/2317_isa2'
       }
     }
   }
