@@ -26,7 +26,7 @@ pipeline {
     }
     stage('Running in Daemon mode') {
       steps {
-        bat 'docker run -d --name 2317 mca2317/2317_ISA2
+        bat 'docker run -d --name 2317 mca2317/2317_ISA2'
       }
     }
   }
