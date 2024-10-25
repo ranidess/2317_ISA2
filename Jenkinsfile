@@ -9,7 +9,7 @@ pipeline {
     stage('Clean and Clone Repo') {
       steps {
         cleanWs()
-        bat 'git clone https://github.com/ranidess/2317_ISA2.git
+        bat 'git clone https://github.com/ranidess/2317_ISA2.git'
       }
     }
     stage('Build') {
